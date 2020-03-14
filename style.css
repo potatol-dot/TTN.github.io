@@ -1,0 +1,94 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a{
+	text-decoration: none !important;
+	color: #000 !important;
+}
+li{
+	list-style: none;
+}
+.header{
+	background-color: #ccc;
+	border-bottom: 1px solid #000;
+}
+.header h2{
+	line-height: 64px;
+}
+.container-fluid{
+	padding-left: 0 !important;
+	display: flex;
+	height: 870px;
+}
+.sidebar{
+	background-color: #ccc;
+    padding-top: 2%;
+    padding-left: 1%;
+	padding-right: 1%;
+    position: fixed;
+    border-right: 1px solid #000;
+    height: 870px;
+}
+.container-fluid .sidebar li{
+	padding: 25px 5px;
+	border-top:1px solid #000;
+
+}
+.container-fluid .sidebar a{
+	display: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-left: 10%;
+}
+.container-fluid .sidebar label:after{
+	content: '';
+    border: 15px solid #fff;
+    border-bottom: 25px solid transparent;
+    border-top: 25px solid transparent;
+    border-left: 0px solid transparent;
+    position: fixed;
+    left: 92px;
+}
+.container-fluid .sidebar :hover >li {
+	width: 300px;
+	background-color: #ccc;
+}
+.container-fluid .sidebar :hover a{
+	display: inline-block;
+}
+.container-fluid .sidebar :hover >li > label{
+	display: none;
+}
+
+.content{
+	width: 91%;
+	height: auto;
+	margin-left: 8%;
+	margin-top: 2%;
+	display: flex;
+}
+.container-fluid .content .HD li{
+	display: flex;
+	padding: 10px;
+}
+.container-fluid .content .HD li p{
+	margin: 0 !important;
+	line-height: 50px;
+	padding-left: 10px;
+}
+.container-fluid .content .Hoi li a{
+	text-decoration: underline !important;
+	font-weight: bold;
+	color: #007bff!important;
+}
+
+.container-fluid .content .Hoi li{
+	padding: 22px 0;
+}
+footer{
+	border-top: 1px solid #000;
+	padding-left: 8%;
+}
